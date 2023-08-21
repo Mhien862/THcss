@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 50px);   
+        grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+    }
+
+.Item{
+    height: 50px;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+   
+    background-color: blueviolet;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="Item" style="grid-area: header">1</div>
+        <div class="Item" style="grid-area: main">2</div>
+        <div class="Item" style="grid-area: sidebar">3</div>
+        <div class="Item" style="grid-area: footer">4</div>
+        <div class="Item" style="grid-area: header">1</div>
+        <div class="Item" style="grid-area: header">1</div>
+        <div class="Item" style="grid-area: header">1</div>
+        <div class="Item" style="grid-area: main">2</div>
+        <div class="Item" style="grid-area: footer">4</div>
+        <div class="Item" style="grid-area: footer">4</div>
+        <div class="Item" style="grid-area: footer">4</div>
+        
+        
+        
+    </div>
+
+</body>
+</html>
